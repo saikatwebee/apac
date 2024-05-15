@@ -1,0 +1,39 @@
+.product-list .product .icon {
+    max-height: 140px;
+}
+.product-list .product .content {
+    padding-left: 1rem;
+}
+
+.product-list .product .content .prd-title {
+    margin-bottom: 0.5rem;
+}
+
+.product-list .product .content .prd-title>div>span:first-child {
+    font-weight: 700;
+}
+
+.product-list .product .content .prd-desc {
+    line-height: 20px;
+    min-height: 40px;
+}
+
+.product-list .product .icon {
+    display: flex;
+}
+
+.product-list .product .icon img {
+    margin: auto;
+}
+
+.about-product .sec-title h1 {
+    min-height: 80px;
+}
+
+.about-product .content p {
+    min-height: 150px;
+}
+
+.about-product .cta button {
+    width: 50%;
+}

@@ -1,0 +1,281 @@
+  .circle_animateBox {
+    position: relative;
+  }
+  
+  .circle_animateBox .circle1 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke-linecap: round;
+    fill: rgba(0, 0, 0, 0.2);
+    transform: rotate(-120deg);
+    transform-origin: center;
+    animation-duration: 5s;
+  }
+  
+  .circle_animateBox .circle2 {
+    stroke-dasharray: 1007;
+    stroke-dashoffset: 1000;
+    stroke-linecap: round;
+    fill: rgba(0, 0, 0, 0.2);
+    transform: rotate(-110deg);
+    transform-origin: center;
+    animation-duration: 3s;
+  }
+  
+  .circle_animateBox .circle3 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke-linecap: round;
+    fill: rgba(0, 0, 0, 0.2);
+    transform: rotate(-45deg);
+    transform-origin: center;
+    animation-duration: 5s;
+  }
+  
+  .circle_animateBox.circle_animation_start .circle1 {
+    animation-name: stroke1;
+    animation-fill-mode: forwards;
+  }
+  
+  .circle_animateBox.circle_animation_start .circle2 {
+    animation-name: stroke2;
+    animation-fill-mode: forwards;
+  }
+  
+  .circle_animateBox.circle_animation_start .circle3 {
+    animation-name: stroke3;
+    animation-fill-mode: forwards;
+  }
+  
+  .circle_animateBox .middleBox {
+    position: absolute;
+    width: 50%;
+    top: 23%;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    line-height: 0.8;
+    font-weight: 600;
+    line-height: 1;
+  }
+  
+  .circle_animateBox .middleBox span {
+    font-size: 4.8rem;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  .circle_animateBox .middleBox h2 {
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .circle_animateBox .middleBox h2 span {
+    margin-bottom: 0px;
+  }
+  
+  .circle_animateBox .middleBox h2 .counterNumber {
+    font-size: 8rem;
+    line-height: 1;
+  }
+  
+  .circle_animateBox .middleBox h2 .upper {
+    font-size: 7.2rem;
+    line-height: 1;
+    top:0.01em;
+    right: 0.1em;
+  }
+  
+  .circle_animateBox .middleBox p {
+    font-size: 3.2rem;
+    position: relative;
+    margin: 0;
+    line-height: 1;
+    margin-top: 4px;
+  }
+  
+  /*.circle_animateBox .middleBox p:after {*/
+  /*  content: "";*/
+  /*  position: absolute;*/
+    /*width: 30px;*/
+  /*  height: 4px;*/
+  /*  background-color: #ffa722;*/
+  /*  left: 50%;*/
+  /*  margin-left: -15px;*/
+  /*  bottom: -10px;*/
+  /*}*/
+  
+  .circle_animateBox .nameBox {
+    width: 50%;
+    font-family: 'Teko', sans-serif;
+    line-height: 0.8;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 4rem;
+  }
+  
+  .circle_animateBox .circleDot {
+    position: absolute;
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  .circle_animateBox.circleBox1 .circleDot {
+    width: 25px;
+    height: 25px;
+    top: 25px;
+    left: 63px;
+  }
+  
+  .circle_animateBox.circleBox2 .circleDot {
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    left: 63px;
+  }
+  
+  .circle_animateBox.circleBox2 .middleBox {
+    top: 25%;
+    padding: 10px;
+  }
+  
+  .circle_animateBox.circleBox2 .middleBox h2 {
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .circle_animateBox.circleBox2 .middleBox h2 .counterNumber {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+  
+  .circle_animateBox.circleBox2 .middleBox p {
+    font-size: 1.6rem;
+    position: relative;
+    margin: 0;
+    line-height: 1;
+    margin-top: 8px;
+  }
+  
+  /*.circle_animateBox.circleBox2 .middleBox p:after {*/
+  /*  content: "";*/
+  /*  position: absolute;*/
+  /*  width: 30px;*/
+  /*  height: 4px;*/
+  /*  background-color: #ffa722;*/
+  /*  left: 50%;*/
+  /*  margin-left: -15px;*/
+  /*  bottom: -10px;*/
+  /*}*/
+  
+  .circle_animateBox.circleBox2 .nameBox {
+    font-family: 'Teko', sans-serif;
+    line-height: 0.8;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 3rem;
+  }
+  
+  .circle_animateBox.circleBox3 .circleDot {
+    width: 20px;
+    height: 20px;
+    top: 33px;
+    right: 35px;
+  }
+  
+  .circle_animateBox.circleBox3 .middleBox {
+    top: 25%;
+    padding: 10px;
+  }
+  
+  .circle_animateBox.circleBox3 .middleBox h2 {
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .circle_animateBox.circleBox3 .middleBox h2 .counterNumber {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+  
+  .circle_animateBox.circleBox3 .middleBox p {
+    font-size: 1.6rem;
+    position: relative;
+    margin: 0;
+    line-height: 1;
+    margin-top: 8px;
+  }
+  
+  .circle_animateBox.circleBox3 .middleBox p:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #ffa722;
+    left: 50%;
+    margin-left: -15px;
+    bottom: -10px;
+  }
+  
+  .circle_animateBox.circleBox3 .nameBox {
+    font-family: 'Teko', sans-serif;
+    line-height: 0.8;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 3rem;
+  }
+  
+  @keyframes stroke1 {
+    to {
+        stroke-dashoffset: 210;
+        stroke-dashoffset: 1975;
+    }
+  }
+  
+  @keyframes stroke2 {
+    to {
+        stroke-dashoffset: 1980;
+    }
+  }
+  
+  @keyframes stroke3 {
+    to {
+        stroke-dashoffset: 520;
+    }
+  }
+  
+  @-webkit-keyframes bgzoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+  
+  @keyframes bgzoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+  
+ 

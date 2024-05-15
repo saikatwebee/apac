@@ -1,0 +1,11 @@
+.vision-values .values ul li {
+    color: var(--text-theme)
+}
+/* .directors .dir-img > .img-container > img {
+    border: 2px solid;
+    border-color: var(--theme-bg-primary);
+} */
+
+.media-links .media .content h1 {
+    min-height: 120px;
+}

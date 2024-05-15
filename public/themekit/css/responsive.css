@@ -1,0 +1,185 @@
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .circle-thick,
+    .circle-thick-2,
+    .circle-thin,
+    .line-group,
+    .marquee-investors {
+        display: none !important;
+    }
+
+    .menu-fixed .menu-brand {
+        height: 95px;
+        line-height: 95px;
+        padding: 15px 0;
+    }
+
+    .key-requirements .tab-box .tab-nav li a {
+        font-size: 12px;
+    }
+
+    .marqInv {
+        font-size: 22px;
+    }
+
+    .banner-title {
+        font-size: 22px;
+    }
+
+    .banner-cta .form-group {
+        margin-bottom: unset !important;
+    }
+
+    .banner-cta .col-md-6+.col-md-6,
+    .banner-cta .col-md-6+.col-md-6+.col-md-6,
+    .features .col-md-4+.col-md-4,
+    .features .col-md-4+.col-md-4+.col-md-4 {
+        margin-top: 15px;
+    }
+
+    .benefits .item {
+        width: 100%;
+    }
+
+    .benefits .item .icon {
+        position: unset !important;
+        transform: unset !important;
+    }
+
+    .about-product .cta button {
+        width: 100%;
+    }
+
+    .key-requirements .tab-box .tab-nav li {
+        width: 50%;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .menu-btn {
+        top: 85%;
+    }
+    .banner-cta .cta-title {
+        border-top-right-radius: 1rem;
+    }
+    .banner-cta .cta-title::after {
+        display: none;
+    }
+    .banner-cta .card-body {
+        border-top-right-radius: unset;
+    }
+    .col-md-6+.col-md-6+.col-md-6 {
+        margin-top: unset;
+    }
+
+    .marqInv {
+        font-size: 30px;
+    }
+
+    .about-product .cta button {
+        width: 100%;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .numbers>div>h1 {
+        font-size: 25px;
+    }
+
+    .numbers>div>p {
+        font-size: 12px;
+    }
+
+    .marqInv {
+        font-size: 16px;
+    }
+
+    .about-product .cta button {
+        width: 100%;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .menu-btn {
+        top: 85%;
+    }
+    .banner-cta .cta-title {
+        border-top-right-radius: 1rem;
+        width: 100%;
+    }
+    .banner-cta .cta-title::after {
+        display: none;
+    }
+    .banner-cta .card-body {
+        border-top-right-radius: unset;
+    }
+    .col-md-6+.col-md-6+.col-md-6,
+    .col-md-12+.col-md-12+.col-md-12,
+    [class*=col-lg-] + [class*=col-lg-] {
+        margin-top: unset;
+    }
+    .banner-cta .card-body .btn.btn-default {
+        margin-top: 1.5rem;
+    }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .numbers>div>p {
+        font-size: 18px;
+    }
+
+    .marqInv {
+        font-size: 30px;
+    }
+
+    .banner-title {
+        font-size: 50px;
+    }
+
+    .key-requirements .tab-box .tab-nav li {
+        width: 100%;
+    }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width:1281px) {
+    .numbers>div>p {
+        font-size: 18px;
+    }
+
+    .marqInv {
+        font-size: 30px;
+    }
+
+    .banner-title {
+        font-size: 50px;
+    }
+
+    .key-requirements .tab-box .tab-nav li {
+        width: 100%;
+    }
+}

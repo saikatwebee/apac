@@ -1,0 +1,261 @@
+/* .totalPayable {} */
+
+.totalPayable>.myProgress {
+    width: 100%;
+    height: 20px;
+    display: flex;
+}
+
+.totalPayable>.myProgress>.principalLoanAmt {
+    width: 85.2%;
+    height: inherit;
+    background-color: var(--theme-primary);
+}
+
+.totalPayable>.myProgress>.totalInterest {
+    width: 14.8%;
+    height: inherit;
+    background-color: var(--theme-secondary);
+}
+
+.totalPayable>.myLegend>.principalLoanAmt>.icon,
+.totalPayable>.myLegend>.totalInterest>.icon {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+}
+
+.totalPayable>.myLegend>.principalLoanAmt>.icon {
+    background-color: var(--theme-primary);
+}
+
+.totalPayable>.myLegend>.totalInterest>.icon {
+    background-color: var(--theme-secondary);
+}
+
+.emiCalculator {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.37298669467787116) 38%, rgba(42, 64, 111, 1) 78%);
+}
+
+.input-container .myTextIcon {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 11px Arial, sans-serif;
+}
+
+.input-container input[type="text"] {
+    height: 33px;
+    width: calc(100% - 45%);
+    border: unset;
+}
+
+.apacInGlance p {
+    line-height: 20px;
+    color: #ccc;
+}
+
+.numbersWrapper {
+    position: relative;
+}
+
+.numbersWrapper .bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.marqInv {
+    font-size: 30px;
+}
+
+/* Banner Starts */
+
+
+
+/* .banner-cta {
+    background-color: #cccccceb;
+} */
+
+.banner-cta .card-header .cta-title {
+    position: relative;
+    background-color: #cccccceb;
+    border-top-left-radius: 1rem;
+    /* border-top-right-radius: 1rem; */
+}
+
+.banner-cta .card-header .cta-title::after {
+    content: "";
+    position: absolute;
+    /* width: 25px;
+    height: 25px; */
+    left: 100%;
+    bottom: 0;
+    border-right: 38px solid transparent;
+    border-bottom: 38px solid #cccccceb;
+    /* border-top-left-radius: 1rem; */
+    /* border: 1px solid red; */
+}
+
+.banner-cta .card-body {
+    background-color: #cccccceb;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.banner-cta input {
+    height: 40px;
+    border: unset;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    outline: unset;
+}
+
+.banner-cta button {
+    height: 40px;
+}
+
+/* Banner Ends */
+
+/* Product List */
+
+/* .product-list .product {
+    max-width: 350px;
+} */
+.product-list .product .content {
+    padding-left: 1rem;
+}
+
+.product-list .product .content .prd-title {
+    margin-bottom: 0.5rem;
+}
+
+.product-list .product .content .prd-title>div>span:first-child {
+    font-weight: 700;
+}
+
+.product-list .product .content .prd-desc {
+    line-height: 20px;
+}
+
+.product-list .product .icon {
+    display: flex;
+}
+
+.product-list .product .icon img {
+    margin: auto;
+}
+
+/* Product List Ends */
+
+/* Apac Benefits Starts */
+.apac-benefits .sec-title {
+    text-align: justify;
+}
+
+.apac-benefits .sec-title h3 {
+    font-weight: unset;
+    font-size: 35px;
+    margin-bottom: 0.5rem;
+}
+
+.apac-benefits .sec-title h1 {
+    font-size: 35px;
+}
+
+.apac-benefits .benefits .item {
+    max-width: 150px;
+}
+
+.apac-benefits .benefits .item .icon {
+    position: absolute;
+    top: -25%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.apac-benefits .benefits .item .icon .img-container {
+    position: relative;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .apac-benefits .benefits .item .icon .img-container img {
+    border-radius: 50%;
+} */
+
+/* Apac Benefits Ends */
+
+/* Why Choose Us Starts */
+.why-choose-us {
+    position: relative;
+}
+
+.why-choose-us .img-l {
+    z-index: 1;
+}
+
+.why-choose-us .features-container {
+    z-index: 3;
+}
+
+.why-choose-us .features .item .icon,
+.why-choose-us .features .item .icon .img-container {
+    min-height: 96px;
+}
+
+.why-choose-us .features .item .icon .img-container {
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.why-choose-us .features .item .feature p {
+    min-height: 40px;
+}
+
+/* Why Choose Us Ends */
+
+.numbers-container {
+    z-index: 990;
+}
+
+.marquee-investors {
+    top: -20%;
+    z-index: 1;
+    /* background-image: url(../../media/icons/circle-gradient.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px; */
+}
+
+@media (max-width: 432px) {
+
+
+.banner-cta .card-body {
+    background-color: #cccccceb;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+     border-top-right-radius: 0rem; 
+}
+.banner-cta .card-header .cta-title {
+     position: initial !important; 
+    background-color: #cccccceb;
+    /* border-top-left-radius: 1rem; */
+    border-top-right-radius: 1rem;em; */
+}
+
+
+}

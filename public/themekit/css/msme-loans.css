@@ -1,0 +1,43 @@
+.value-proposition .dir-img>.img-container>img {
+    border: 3px solid;
+    border-color: var(--theme-secondary);
+}
+
+.value-proposition .dir-caption>h3,
+.key-features .dir-caption>h3 {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .value-proposition .card:hover {
+    box-shadow: 3px 2px 9px 2px #ccc;
+} */
+.product-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.product-list li {
+    /* width: 100%; */
+    cursor: pointer;
+    height: 40px;
+}
+
+.product-list li a {
+    /* padding: 2rem 1rem; */
+    /* width: 100%; */
+    color: var(--theme-primary);
+    text-decoration: none;
+    /* display: flex;
+    align-items: center; */
+}
+
+.product-list li:hover {
+    background-color: var(--theme-bg-secondary);
+}
+
+.product-list li:hover a {
+    color: var(--theme-secondary);
+}

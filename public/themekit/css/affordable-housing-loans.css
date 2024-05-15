@@ -1,0 +1,52 @@
+.value-proposition .dir-img>.img-container>img {
+    border: 3px solid;
+    border-color: var(--theme-secondary);
+}
+
+.value-proposition .dir-caption>h3 {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key-requirements .tab-box .tab-nav li a {
+    margin: unset;
+    box-shadow: unset;
+    border-radius: unset;
+    border: unset;
+    color: var(--theme-primary);
+}
+
+.key-requirements .tab-box .tab-nav li.active a {
+    color: var(--theme-secondary);
+    background-color: #fff;
+}
+
+.key-requirements .tab-box .tab-nav li a {
+    background-color: #13304a;
+    border-color: #13304a;
+    color: #fff;
+}
+
+.key-requirements .tab-box>.panel {
+    background-color: #fff;
+}
+
+.key-requirements .tab-box>.panel ul.text-list li {
+    padding: 0 0 0 25px;
+}
+
+.key-requirements .tab-box>.panel ul.text-list li::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    transform: translate(-50%, -50%);
+    height: 18px;
+    width: 18px;
+    padding: 5px;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background: url(../../media/products/list-icon.png);
+}

@@ -1,0 +1,469 @@
+.sub-container {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    height: max-content;
+  }
+
+.view,
+.breakup {
+  width: 50%;
+}
+.details input {
+  width: 100%;
+}
+.detail {
+    display: flex;
+    justify-content: space-between;
+}
+.footer {
+    display: flex;
+}
+
+
+/*----- Styling the sliders start ----*/
+input[type=range].styled-slider {
+    height: 0px;
+    -webkit-appearance: none;
+  }
+  
+  /*progress support*/
+  input[type=range].styled-slider.slider-progress {
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(0.5 * 0px + var(--ratio) * (100% - 0px));
+  }
+  
+  input[type=range].styled-slider:focus {
+    outline: none;
+  }
+  
+  /*webkit*/
+  #loan-amount.styled-slider::-webkit-slider-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 1.4em;
+    box-shadow: none;
+    background:url(https://cdn-icons-png.flaticon.com/512/3342/3342829.png) no-repeat 0px 0px ;  
+    background-size:100%; 
+    -webkit-user-select: none;
+    background-color: white;
+    margin-top: calc(1em * 0.5 - max(2.8em * 0.5,0.3em));
+    -webkit-appearance: none;
+  }
+  #interest-rate.styled-slider::-webkit-slider-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 1.4em;
+    box-shadow: none;
+    background:url(https://cdn-icons-png.flaticon.com/512/253/253284.png) no-repeat 0px 0px ;  
+    background-size:100%; 
+    -webkit-user-select: none;
+    background-color: white;
+    margin-top: calc(1em * 0.5 - max(2.8em * 0.5,0.3em));
+    -webkit-appearance: none;
+  }
+  #loan-period.styled-slider::-webkit-slider-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 1.4em;
+    box-shadow: none;
+    background:url(https://cdn-icons-png.flaticon.com/512/5296/5296907.png) no-repeat 0px 0px ; 
+    background-size:100%; 
+    -webkit-user-select: none;
+    background-color: white;
+    margin-top: calc(1em * 0.5 - max(2.8em * 0.5,0.3em));
+    -webkit-appearance: none;
+  }
+  
+  input[type=range].styled-slider::-webkit-slider-runnable-track {
+    height: 7px;
+    border-radius: 0.5em;
+    background: #D0D0D0;
+    border: none;
+    box-shadow: none;
+  }
+  
+  input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(#F39838,#F39838) 0/var(--sx) 100% no-repeat, #D0D0D0;
+  }
+  
+  /*--------------- Styling the sliders  End ----------------------*/
+
+#price {
+    font-size: 36px;
+    color: #F39838;
+    font-weight: bold;
+  }
+  
+#price-container {
+    color: #293F6D;
+    margin-top: 38px;
+    font-weight: bold;
+    margin-top:0px !important
+  }
+  
+#price-container::before {
+    content: "Equated Monthly Installments (EMI)";
+    font-size: 16px;
+    display: block;
+    margin-bottom:14px;
+    color: #293F6D;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size:16px;
+  font-family: 'Montserrat', sans-serif;
+  }
+  .chart-details{
+    margin-top: -57px !important;
+  }
+#cp::before{
+  content: "\20B9";
+}
+#ci::before{
+  content: "\20B9";
+}
+#ct::before{
+  content: "\20B9";
+}
+.common_input{
+    width: 100%;
+    padding: 9px 10px;
+    margin: 6px 0 0 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+      font-size:16px;
+  font-family: 'Montserrat', sans-serif;
+  }
+
+
+input[type="number"] {
+      font-size:16px;
+      font-family: 'Montserrat', sans-serif;
+  }
+.common_input::-webkit-outer-spin-button,
+.common_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.common_input {
+  -moz-appearance: textfield;
+}
+
+:focus-visible {
+    outline: none !important;
+}
+
+
+.emi_tle{
+    margin-bottom: 30px !important;
+}
+
+/*  RESPONSIVE EMI CALCULATE */
+@media (min-width: 1200px) {
+    .footer{
+      margin-bottom: 35px;
+    }
+}
+@media (min-width:991px) and (max-width:1200px){
+    .container{
+      padding: 28px 20px !important;
+    }
+    #dount_cen{
+      top: 47% !important;
+      left: 7px !important;
+    }
+  }
+  @media (min-width:768px) and (max-width:991px){
+    .breakup{
+      margin-left: 95px !important;
+    }
+    .breakuped{
+      width: 48% !important;
+      margin-left: 167px !important;
+    }
+    .break_space{
+      margin-top: 50px !important;
+    }
+    .emi_tle{
+      text-align: center !important;
+    }
+  }
+  @media (max-width:991px){
+      .emi_tle{
+      text-align: center !important;
+    }
+    .sub-container{
+      flex-direction: column !important;
+      gap: 25px !important;
+    }
+    .view,.breakup{
+      width: 100% !important;
+      margin-left: 0px !important;
+    }
+    .break_space{
+      padding-right: 0px !important;
+      padding-left: 0px  !important;
+    }
+    button#get_instan{
+      position: relative !important;
+      left: -225px !important;
+    }
+    .breakup{
+      justify-content: center !important;
+      padding: 10px !important;
+    }
+    #price-container{
+      margin-top: 21px !important;
+      margin-left: 124px !important;
+    }
+    hr:not([class*=space]) {
+      width: 105% !important;
+    }
+    .bt_demo{
+      position: relative !important;
+      left: -218px !important;
+    }
+  }
+  @media (max-width:768px){
+    .breakup{
+      margin-left: 0px !important;
+    }
+    .sub-container{
+      flex-direction: column !important;
+      gap: 25px !important;
+    }
+    .view, .breakup{
+      width: 100% !important;
+    }
+    #price-container{
+      margin-top: 18px !important;
+      margin-left: 123px !important;
+    }
+    button#get_instan{
+      margin-top: 101px !important;
+      white-space: nowrap;
+  
+    }
+    #price-container::before{
+      white-space: nowrap;
+  
+    }
+    .bt_demo{
+      white-space: nowrap !important;
+    }
+    .breakuped{
+      width: 70% !important;
+      margin-left: 70px !important;
+    }
+    hr:not([class*=space]) {
+      width: 107% !important;
+  }
+  }
+  @media (max-width:400px){
+    #price-container::before{
+      white-space: unset !important;
+    }
+    button#get_instan{
+      margin-top: 116px !important;
+      white-space: nowrap;
+      left: -158px !important;
+    }
+    .bt_demo{
+      /*margin-top: 169px !important;*/
+      /*left: -118px !important;*/
+          margin-top: 160px !important;
+    left: -118px !important;
+    }
+    .breakuped{
+      margin-left: 45px !important;
+    }
+    #price-container>span{
+        font-size: 28px !important;
+    }
+    #price{
+        font-size: 28px !important;
+    }
+  }
+
+/*  END EMI RESPONE */
+
+
+
+/* POPUP Modal Pure CSS START*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+
+@color-card-background: #2d3638;
+@color-tag-background: #191e20;
+@color-anchor: #e37544;
+@color-body-copy: #b9bcbd;
+
+@breakpoint-medium: "screen and (min-width: 700px)";
+
+
+
+.form-popup-bg {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.form-popup-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 110, 141, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  overflow-y: auto;
+  z-index: 10000;
+}
+.form-popup-bg.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.form-container {
+    background-color: #1F3668;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+  padding: 40px;
+  color: #fff;
+}
+.close-button {
+  background:none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /* border: solid 1px #fff; */
+    border-radius: 50%;
+    border-color: dimgray;
+
+}
+
+.form-popup-bg:before{
+    content:'';
+    background-color: #1F3668;
+  opacity: .25;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.form-popup-bg-2 {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.form-popup-bg-2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 110, 141, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  overflow-y: auto;
+  z-index: 10000;
+}
+.form-popup-bg-2.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.form-container_2 {
+    background-color: #F39838;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+  padding: 40px;
+  color: #fff;
+}
+.close-button {
+  background:none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /* border: solid 1px #fff; */
+    border-radius: 50%;
+    border-color: dimgray;
+
+}
+
+.form-popup-bg-2:before{
+    content:'';
+    background-color: #1F3668;
+  opacity: .25;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+hr:not([class*=space]) {
+    height: 1px;
+    border: none;
+    background: #dadada;
+    margin: 1px 0;
+    width: 112%;
+    margin-left: -18px;
+}
+#msg{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: #F39838;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+
+}
+/* POPUP Modal Pure CSS  END*/
